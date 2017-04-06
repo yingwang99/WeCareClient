@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/Frame_BottomView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        
+          <LinearLayout
+            android:id="@+id/MyBottemHomeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+            
+            <ImageView
+              android:id="@+id/MyBottemHomeImg"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:src="@drawable/food_u"  
+              />
+
+            <TextView
+                android:id="@+id/MyBottemHomeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/search_bottem_textcolor"
+                android:text="Home"
+                android:textSize="13dp" />
+        </LinearLayout>
+        
+          <LinearLayout
+            android:id="@+id/MyBottemUpgrationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+			
+            <ImageView
+              android:id="@+id/MyBottemUpgrationImg"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:src="@drawable/ic_favor1"  
+             />
+
+            <TextView
+                android:id="@+id/MyBottemUpgrationTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/search_bottem_textcolor"
+                android:text="Upgration"
+                android:textSize="13dp" />
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:id="@+id/MyBottemRewardBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+            
+            <ImageView
+              android:id="@+id/MyBottemRewardImg"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:src="@drawable/ic_running1"  
+              />
+
+            <TextView
+                android:id="@+id/MyBottemrewardTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reward"
+                android:textColor="@drawable/search_bottem_textcolor"  
+                android:textSize="13dp" />
+        </LinearLayout>
+
+      
+        <LinearLayout
+            android:id="@+id/MyBottemMyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+              android:id="@+id/MyBottemMeImg"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:src="@drawable/me1"  
+              />
+            
+            <TextView
+                android:id="@+id/MyBottemMyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/search_bottem_textcolor"
+                android:text="Me"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+      
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/FramePager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Frame_BottomView" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

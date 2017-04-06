@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+       android:id="@+id/top_view"
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:background="#33CC66" >
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="WeCare"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+  </LinearLayout>
+  
+  <RelativeLayout
+       android:id="@+id/second_view"
+       android:layout_width="fill_parent"
+       android:layout_height="80dp"
+       android:background="#FFFFFF" >
+        
+      <RelativeLayout 
+          android:id="@+id/goal_div"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_alignParentLeft="true"
+          android:paddingLeft="30dp" >
+          
+          <TextView
+            android:id="@+id/goal_of_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1200" />
+          
+          <TextView
+            android:id="@+id/label_goal_of_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goal_of_calories"
+            android:text="Goal" />
+          
+      </RelativeLayout>
+      
+      <RelativeLayout 
+          android:id="@+id/minus_div"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/goal_div"
+          android:layout_centerVertical="true"  
+          android:paddingLeft="30dp" >
+          
+          <TextView
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+ 
+      </RelativeLayout>
+      
+       <RelativeLayout 
+          android:id="@+id/food_div"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/minus_div"
+          android:layout_centerVertical="true"  
+          android:paddingLeft="30dp" >
+          
+          <TextView
+            android:id="@+id/amount_of_food_intake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+          
+          <TextView
+            android:id="@+id/label_amount_of_food_intake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount_of_food_intake"
+            android:text="Food" />
+          
+      </RelativeLayout>
+      
+       <RelativeLayout 
+          android:id="@+id/equal_div"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/food_div"
+          android:layout_centerVertical="true"  
+          android:paddingLeft="40dp" >
+          
+          <TextView
+            android:id="@+id/equal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="=" />
+ 
+      </RelativeLayout>
+      
+       <RelativeLayout 
+          android:id="@+id/result_div"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/equal_div"
+          android:layout_centerVertical="true"  
+          android:paddingLeft="40dp" >
+          
+          <TextView
+            android:id="@+id/amount_of_intake_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+          
+          <TextView
+            android:id="@+id/label_amount_of_intake_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount_of_intake_left"
+            android:text="Left" />
+          
+      </RelativeLayout>
+      
+  </RelativeLayout>
+  
+  <ScrollView
+        android:id="@+id/MyMyScroll" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 	
+      	<LinearLayout
+      	    android:layout_width="match_parent"
+      	    android:layout_height="match_parent" 
+      	    android:orientation="vertical" >
+       					
+	       <RelativeLayout
+	           android:id="@+id/breakfast_1"
+	           android:layout_below="@+id/second_view"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="30dp"
+	       	   android:background="#FFFFFF" >
+		
+	           <RelativeLayout
+	            android:id="@+id/breakfast_label_div"
+	            android:layout_width="fill_parent"
+	            android:layout_height="30dp"
+	        	android:background="#33CC66" >
+	        	
+		        <TextView
+		            android:id="@+id/breakfast_label"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:text="Breakfast" 
+		            android:layout_centerVertical="true" 
+		            android:textColor="#FFFFFF" 
+		            android:paddingLeft="20dp" 
+		            android:paddingTop="5dp" 
+		            />
+	           
+	           </RelativeLayout>
+	           
+	            <RelativeLayout
+	                android:id="@+id/breakfast_add_div"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@+id/breakfast_label_div" >
+	        	
+		        <TextView
+		            android:id="@+id/breakfast_click"
+		            android:layout_width="wrap_content"
+		            android:layout_height="40dp"
+		            android:text="+ Add Food" 
+		            android:layout_centerVertical="true" 
+		            android:textColor="#00CC00" 
+		            android:paddingLeft="20dp" 
+		            android:paddingTop="10dp" />            
+	           </RelativeLayout>
+	           
+	             <RelativeLayout
+	                android:id="@+id/breakfast_view"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:layout_below="@+id/breakfast_add_div" >
+	           
+		           <ListView
+				        android:id="@+id/breakfast_listView"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content" >
+				   </ListView>
+			    </RelativeLayout>
+	        
+	     
+	    </RelativeLayout>
+	    
+	      <RelativeLayout
+	           android:id="@+id/lunch_2"
+	           android:layout_below="@+id/breakfast_1"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="30dp"
+	       	   android:background="#FFFFFF" >
+		
+	           <RelativeLayout
+	            android:id="@+id/lunch_label_div"
+	            android:layout_width="fill_parent"
+	            android:layout_height="30dp"
+	        	android:background="#33CC66" >
+	        	
+		        <TextView
+		            android:id="@+id/lunch_label"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:text="Lunch" 
+		            android:layout_centerVertical="true" 
+		            android:textColor="#FFFFFF" 
+		            android:paddingLeft="20dp" 
+		            android:paddingTop="5dp" 
+		            />
+	           
+	           </RelativeLayout>
+	           
+	            <RelativeLayout
+	                android:id="@+id/lunch_add_div"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@+id/lunch_label_div" >
+	        	
+		        <TextView
+		            android:id="@+id/lunch_click"
+		            android:layout_width="wrap_content"
+		            android:layout_height="40dp"
+		            android:text="+ Add Food" 
+		            android:layout_centerVertical="true" 
+		            android:textColor="#00CC00" 
+		            android:paddingLeft="20dp" 
+		            android:paddingTop="10dp" />            
+	           </RelativeLayout>
+	           
+	             <RelativeLayout
+	                android:id="@+id/lunch_view"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:layout_below="@+id/lunch_add_div" >
+	           
+		           <ListView
+				        android:id="@+id/lunch_listView"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content" >
+				   </ListView>
+			    </RelativeLayout>
+	        
+	     
+	    </RelativeLayout>
+	       
+	    <RelativeLayout
+	           android:id="@+id/dinner_3"
+	           android:layout_below="@+id/lunch_2"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="30dp"
+	           android:layout_marginBottom="30dp"
+	       	   android:background="#FFFFFF" >
+		
+	           <RelativeLayout
+	            android:id="@+id/dinner_label_div"
+	            android:layout_width="fill_parent"
+	            android:layout_height="30dp"
+	        	android:background="#33CC66" >
+	        	
+		        <TextView
+		            android:id="@+id/dinner_label"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:text="Dinner" 
+		            android:layout_centerVertical="true" 
+		            android:textColor="#FFFFFF" 
+		            android:paddingLeft="20dp" 
+		            android:paddingTop="5dp" 
+		            />
+	           
+	           </RelativeLayout>
+	           
+	            <RelativeLayout
+	                android:id="@+id/dinner_add_div"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@+id/dinner_label_div" >
+	        	
+		        <TextView
+		            android:id="@+id/dinner_click"
+		            android:layout_width="wrap_content"
+		            android:layout_height="40dp"
+		            android:text="+ Add Food" 
+		            android:layout_centerVertical="true" 
+		            android:textColor="#00CC00" 
+		            android:paddingLeft="20dp" 
+		            android:paddingTop="10dp" />            
+	           </RelativeLayout>
+	           
+	             <RelativeLayout
+	                android:id="@+id/dinner_view"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:layout_below="@+id/dinner_add_div" >
+	           
+		           <ListView
+				        android:id="@+id/dinner_listView"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content" >
+				   </ListView>
+			    </RelativeLayout>
+	        
+	     
+	    </RelativeLayout>
+         </LinearLayout>
+   </ScrollView>
+        
+</LinearLayout>

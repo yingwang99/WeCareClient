@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    	<LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#33CC66" >
+
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:gravity="center" >
+	
+	            <ImageView
+	                android:id="@+id/previous"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/arrow_pre" />
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/main_title"
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="4"
+	            android:gravity="center"
+	            android:text="@string/meal_type"
+	            android:textColor="#ffffff"
+	            android:textSize="18sp" />
+
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:gravity="center" >
+	
+	            
+	        </LinearLayout>
+	        
+        </LinearLayout>
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    
+        <LinearLayout
+            android:id="@+id/Search_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="300"
+            android:background="@drawable/search_input"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/searchtext" 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="search food..."
+                android:background="#FFFFFF"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+            
+        </LinearLayout>
+        
+     
+        <LinearLayout
+            android:id="@+id/Search_div"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/Search_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Search"
+                android:textColor="#FF8C00"/>
+         
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/Search_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/icon_mic" />
+
+    </LinearLayout>
+    
+       
+	    <ListView
+	        android:id="@+id/listView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	    </ListView>
+    
+
+
+</LinearLayout>

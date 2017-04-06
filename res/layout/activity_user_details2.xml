@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+       android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#33CC66" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_pre" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/main_title"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_next" />
+
+        </LinearLayout>
+        
+     
+  </LinearLayout>
+  
+    <RelativeLayout  
+          android:id="@+id/login_div"  
+          android:layout_width="fill_parent"  
+          android:layout_height="wrap_content"  
+          android:padding="15dip"  
+          android:layout_margin="15dip"  
+          > 
+     
+     <TextView  
+          android:id="@+id/title_goal"  
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content"  
+          android:text="@string/title_tabFragment2" 
+          android:layout_alignParentTop="true"  
+          android:layout_centerInParent="true"
+          android:layout_marginTop="10dp"  
+          android:textSize="16sp"/>
+   
+    <LinearLayout
+        android:id="@+id/second_view"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/title_goal"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/male"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/gender_m"
+            android:background="@drawable/frag_button"           
+            android:textSize="16sp" 
+            style="@style/normalText" />
+        
+         <TextView
+            android:id="@+id/female"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/gender_f"
+            android:background="@drawable/frag_button"           
+            android:textSize="16sp" 
+            style="@style/normalText" />
+           
+       </LinearLayout>
+       
+      
+        <TextView
+            android:id="@+id/title_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/second_view"
+            android:layout_marginTop="20dp"
+            android:text="@string/string_birthday"
+            android:textSize="16sp" />
+        
+	    <EditText
+            android:id="@+id/dayofbirth"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/title_birthday"
+            android:hint="1970-1-1"
+            android:background="@drawable/frag_button"           
+            android:textSize="14sp" 
+            style="@style/normalText"  />
+	   
+	  <TextView
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/dayofbirth"
+            android:layout_marginTop="20dp"
+            android:text="@string/string_country"
+            android:textSize="16sp" />
+        
+	    <EditText
+            android:id="@+id/text_country"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/country"
+            android:hint="Ireland"
+            android:background="@drawable/frag_button"           
+            android:textSize="14sp" 
+            style="@style/normalText" />
+       
+	</RelativeLayout>
+</LinearLayout>

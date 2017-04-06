@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <RelativeLayout  
+          android:id="@+id/logo_div"  
+          android:layout_width="fill_parent"  
+          android:layout_height="wrap_content"
+          android:padding="30dip"  
+          android:layout_margin="30dip"   
+          >  
+    <ImageView
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="30dip"
+        android:padding="15dip" 
+        >
+
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="@string/register_button"
+            android:textColor="#66CC66"
+            android:textAlignment="center" />
+
+       <!--  <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerbtn"
+            android:background="#00000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/login_button"
+            android:textAlignment="center" /> -->
+    </RelativeLayout>
+
+  </LinearLayout>

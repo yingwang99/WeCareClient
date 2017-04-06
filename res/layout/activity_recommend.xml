@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#33CC66" >
+
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:gravity="center" >
+	
+	            <ImageView
+	                android:id="@+id/previous"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/arrow_pre" />
+	        </LinearLayout>
+	        <TextView
+	            android:id="@+id/main_title"
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="4"
+	            android:gravity="center"
+	            android:text="Balance your day !"
+	            android:textColor="#ffffff"
+	            android:textSize="18sp" />
+
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:gravity="center" >
+	
+	            
+	        </LinearLayout>
+	        
+        </LinearLayout>
+        
+
+    <TextView
+        android:id="@+id/rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+     />
+
+
+</LinearLayout>

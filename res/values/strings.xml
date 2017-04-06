@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WeCareClient</string>
+    <string name="register_button">Register</string>
+    <string name="login_button">Login</string>
+    <string name="title_activity_user_details">UserDetailsActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="lose_weight">Lose Weight</string>
+    <string name="keep_diet">Keep Diet</string>
+    <string name="gain_weight">Gain Weight</string>
+
+    <!-- tab1 -->
+    <string name="title_tabFragment1">What is your goal?</string>
+    <string name="main_title">GOAL</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <!-- tab2 -->
+    <string name="title_tabFragment2">I am</string>
+    <string name="gender_m">Male</string>
+    <string name="gender_f">Female</string>
+    <string name="string_birthday">Day of Birth</string>
+    <string name="string_country">Country</string>
+
+    <!-- tab3 -->
+    <string name="how_tall">What is your height?(cm)</string>
+    <string name="how_weight">What is your weight?(kg)</string>
+    <string name="weight_goal">What is the goal of your weight?(kg)</string>
+
+    <!-- tab4 -->
+    <string name="title_tabFragment4">What is your goal per week?</string>
+    <string name="reduce_0.2">Reduce 0.2 kg per week</string>
+    <string name="reduce_0.5">Reduce 0.5 kg per week</string>
+    <string name="reduce_0.8">Reduce 0.8 kg per week</string>
+    <string name="reduce_1">Reduce 1 kg per week</string>
+
+    <!-- tab5 -->
+    <string name="email_address">Emaill address</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Please confirm your password</string>
+    <string name="username_select">Please select your username</string>
+    <string name="title_activity_user_details_activity2">UserDetailsActivity2</string>
+    <string name="title_activity_user_details_activity3">UserDetailsActivity3</string>
+    <string name="title_activity_user_details_activity4">UserDetailsActivity4</string>
+    <string name="title_activity_user_details_activity5">UserDetailsActivity5</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_add_meal">AddMealActivity</string>
+
+    <!-- add meal activity -->
+    <string name="meal_type">Breakfast</string>
+
+    <!-- voice recognition -->
+    <string name="voice_url">https://play.google.com/store/apps/details?id=com.google.android.voicesearch</string>
+    <string name="dialog_title">Alert</string>
+    <string name="dialog_content">Cannot find voice tool, start downloading?</string>
+    <string name="cancel">Cancel</string>
+    <string name="download">Download</string>
+
+    <!-- login activity -->
+    <string name="login_label_signin">Sign In</string>
+    <string name="login_username_hint">Please input your username</string>
+    <string name="login_label_username">Username</string>
+    <string name="login_label_password">Password</string>
+    <string name="login_password_hint">Please input your password</string>
+    <string name="login_button_txt">Login</string>
+    <string name="register_button_txt">Register</string>
+    <string name="login_register_link">No account？ <a href="#" mce_href="#">Register</a></string>
+    <string name="title_activity_user_account">UserAccountActivity</string>
+    <string name="title_activity_my_reward">MyRewardActivity</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="title_activity_upgration">UpgrationActivity</string>
+
+    <!-- reward activity -->
+
+    <string name="title_activity_rsmain">RSMainActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="textview">TextView</string>
+    <string name="coupon_icon_description">this is the icon short cut for coupons</string>
+    <string name="sales_icon_decription">this is the icon short cut for sales product</string>
+    <string name="trending_icon_decription">this is the icon short cut for trending products</string>
+    <string name="new_icon_decription">this is the short cut for new products</string>
+    <string name="sales_label">sales</string>
+    <string name="coupon_label">coupon</string>
+    <string name="trending_label">trending</string>
+    <string name="new_label">new</string>
+    <string name="hot_recepies_label">Hot Recepies</string>
+    <string name="view_more_label">view more ></string>
+    <string name="fire_icon">this is a icon represent hot issues</string>
+    <string name="recepie_128x128_thumbnail_description">this is a 128x128 thumbnail for recepie</string>
+    <string name="recepie_title">Wake Up Your body</string>
+    <string name="recepie_popularity_label">Trending | 200k</string>
+    <string name="recepie_kcal_label">500 kcal</string>
+    <string name="product_128x128_thumbnail_decription">this is 128x128 product thumbnail</string>
+    <string name="product_title_label">Tesla Model II</string>
+    <string name="product_price_label">$ 40000</string>
+    <string name="title_activity_nutrition">NutritionActivity</string>
+    <string name="title_activity_my_progress">MyProgressActivity</string>
+    <string name="title_activity_recommend">RecommendActivity</string>
+
+</resources>

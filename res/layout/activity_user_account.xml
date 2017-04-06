@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+       android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#33CC66" >
+
+      
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="My Account"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+             
+  </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/MyMyScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/My_head"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                	android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/My_logintoast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/My_head"
+                    android:drawableRight="@drawable/arrow_profile"
+                    android:gravity="bottom"
+                    android:text="cassie"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/My_messagebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/My_head"
+                    android:layout_margin="2dp"
+                    android:layout_toRightOf="@+id/My_logintoast"
+                    android:background="@drawable/message_background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp" >
+
+                    <ImageView
+                        android:id="@+id/My_messageimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/message_new" />
+
+                    <TextView
+                        android:id="@+id/My_messagetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="2"
+                        android:textSize="11dp" />
+                </LinearLayout>
+
+                
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/account_tab_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/My_checkin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/my_tab_background"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:text="CheckIn"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/My_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/my_tab_background"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Message"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/My_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/my_tab_background"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Friends"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/My_list_nutrition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+                
+                <ImageView
+	              android:layout_width="30dp"
+	              android:layout_height="35dp"
+	              android:src="@drawable/ic_nutrition"  
+	              />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="    Nutrition"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/My_list_recomm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+                
+                <ImageView
+	              android:layout_width="30dp"
+	              android:layout_height="35dp"
+	              android:src="@drawable/ic_recommend"  
+	              />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="    View Recommendation"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/My_list_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp" 
+                android:paddingLeft="15dp" >
+                
+                <ImageView
+	              android:layout_width="30dp"
+	              android:layout_height="35dp"
+	              android:src="@drawable/ic_progress"  
+	              />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="    View Progress"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+          </LinearLayout>
+    </ScrollView>
+</LinearLayout>

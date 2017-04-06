@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="0dp"
+    android:background="@drawable/shadow"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/topic_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:contentDescription="@string/recepie_128x128_thumbnail_description"
+        android:paddingBottom="1dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="1dp"
+        android:paddingTop="1dp"
+        android:src="@drawable/recepie" />
+
+    <LinearLayout
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/recepie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"
+            android:text="@string/recepie_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recepie_popularity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"
+            android:text="@string/recepie_popularity_label" />
+
+        <TextView
+            android:id="@+id/recepie_kcal_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"
+            android:text="@string/recepie_kcal_label" />
+
+    </LinearLayout>
+
+</LinearLayout>
